@@ -1,22 +1,174 @@
-.App {
-  text-align: center;
+*:focus{
+  outline: none;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.AddToCart-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
+.header{
+  margin: 10px 0px;
+  padding: 8px 0px;
+  border-top: 1px solid #e8e8ee;
+  border-bottom: 1px solid #e8e8ee;
+}
+.header span{
+  cursor: pointer;
+}
+.AddToCart-intro {
+  font-size: large;
+}
+.cart-items{
+  border: 1px solid #adb5bd;
+  float: left;
+  margin: 10px 0px;
+  width: 100%;
+}
+.discount{
+  position: absolute;
+  background: #15bb15;
+  padding: 2px 7px;
+  color: #ffffff;
+  top: 24px;
+  font-size: 10px;
+  width: 53px;
+}
+.productImage{
+  height: 130px;
+  width: 150px;
+  margin: 13px auto;
+  background: #ececec;
+}
 
-.App-link {
-  color: #09d3ac;
+.productImage img{
+  width: 100%;
+  height: 100%;
+}
+.cart-bottom{
+  display: block;
+  background: #f2f1f1;
+  padding: 10px 5px 15px 5px;
+}
+.cart-bottom p{
+  text-align: left;
+  margin: 0px;
+}
+.cart-bottom .with-discount{
+  margin-left: 5px;
+}
+.cart-bottom .without-discount{
+  text-decoration: line-through;
+  text-decoration-color: red;
+  -webkit-text-decoration-color:red;
+  color: grey;
+}
+.cart-bottom button{ 
+  float: right;
+  color: #2c9eec;
+  border: 1px solid #2c9eec;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+}
+.message{
+  background: #15bb15;
+  padding: 2px 25px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+}
+.header button{
+  background-color: #2c9eec;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.count{
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0px grey;
+  height: 17px;
+  width: 17px;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  right: 194px;
+  top: 9px;
+  background: white;
+  border: 1px solid #f8f8f8;
+}
+table{
+  width: 100%;
+  border-bottom: 1px solid #e8e8ee;
+}
+thead tr{
+  border-top: 1px solid #e8e8ee;
+  border-bottom: 1px solid #e8e8ee;
+}
+thead th{
+  font-size: 15px;
+  font-weight: normal;
+  color: #8e8e8e;
+}
+th,td{
+  padding: 5px;
+  color: #8e8e8e;
+}
+.select-item{
+  border: 1px solid #e4e4e4;
+}
+.select-item span, .item-name{
+  color: #8e8e8e;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.quantity{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity span{
+  border: 1px solid #e8e8e8;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity button{
+  background: no-repeat;
+  border: none;
+  color: #8e8e8e;
+  font-size: 20px;
+  height: 40px;
+  outline: none;
+}
+
+.quantity input[type='text']{
+  border: 1px solid #e4e4e4;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 13px;  
+}
+.total{
+  border: 1px solid #e4e4e4;
+}
+.total tr{
+  font-size: 12px;
+}
+.total thead tr{
+  border: none
+}
+.total-bottom{
+  background: #f4f4f4;
+}
+
+@keyframes AddToCart-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
